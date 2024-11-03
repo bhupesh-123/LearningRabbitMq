@@ -16,6 +16,16 @@ rabbit:
       exchange: stud-exchange
       routing: stud-routing
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"          # Expose all Actuator endpoints
+  endpoint:
+    health:
+      show-details: always    # Show health details in the health endpoint
+
+
 
 
 

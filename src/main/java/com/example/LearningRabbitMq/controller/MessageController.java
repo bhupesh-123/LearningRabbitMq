@@ -32,4 +32,9 @@ public class MessageController {
         producer.sendTeacher(teacher);
         return ResponseEntity.ok("Message sent: " + teacher);
     }
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello, World!";
+    }
 }
